@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[将Pandas中的DataFrame类型转换成Numpy中array类型的三种方法]]></title>
+    <url>%2F2020%2F05%2F09%2F%E5%B0%86Pandas%E4%B8%AD%E7%9A%84DataFrame%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E6%88%90Numpy%E4%B8%ADarray%E7%B1%BB%E5%9E%8B%E7%9A%84%E4%B8%89%E7%A7%8D%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[https://blog.csdn.net/qq_30163461/article/details/80080529]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>pandas</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序开发之表单验证（WxValidate使用）]]></title>
+    <url>%2F2020%2F04%2F30%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91%E4%B9%8B%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81%EF%BC%88WxValidate%E4%BD%BF%E7%94%A8%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[小程序表单验证—WxValidate​ 这学期学习小程序有一段时间了，对于表单的应用之前是手写验证规则，对正则表达式的使用要求很高，这次想做的表单项目不少，找到了一个插件专门验证表单，GitHub地址: https://github.com/skyvow/wx-extend 很好用，但是没深入看代码，暂时只写出用法 ​ 首先引入WxValidate.js文件，在 wx-extend/src/assets/plugins/wx-validate/WxValidate.js 路径下，放到utils文件夹下，在index.js中引入 import WxValidate from &#39;../../utils/WxValidate.js&#39; 在wxml中表单的每一项name要对应，且要绑定数据，在js 文件中加入form表单的绑定。比如， &lt;input name=&#39;name&#39; value=&#39;&#39; class=&#39;input&#39;&gt;&lt;/input&gt; 然后就是最重要的验证规则的书写了 首先要在onLoad函数中加入验证规则函数 1234567891011// onLoad中有多个函数的写法，onLoad函数内写函数名，函数在onLoad外定义onLoad() &#123; this.getuser() this.initValidate()//验证规则函数&#125; //onLoad中只有一个函数的写法onLoad:function()&#123; rules:&#123;&#125; messages:&#123;&#125;&#125; 此处需要注意的是一定要在js文件中onLoad验证规则，否则编译会报checkform is not a function 然后是验证规则和报错规则的代码 123456789101112131415161718192021222324252627282930313233343536373839404142434445//报错 showModal(error) &#123; wx.showModal(&#123; content: error.msg, showCancel: false, &#125;) &#125;,//验证函数initValidate() &#123; const rules = &#123; name: &#123; required: true, minlength:2 &#125;, phone:&#123; required:true, tel:true &#125; &#125; const messages = &#123; name: &#123; required: '请填写姓名', minlength:'请输入正确的名称' &#125;, phone:&#123; required:'请填写手机号', tel:'请填写正确的手机号' &#125; &#125; this.WxValidate = new WxValidate(rules, messages) &#125;,//调用验证函数 formSubmit: function(e) &#123; console.log('form发生了submit事件，携带的数据为：', e.detail.value) const params = e.detail.value //校验表单 if (!this.WxValidate.checkForm(params)) &#123; const error = this.WxValidate.errorList[0] this.showModal(error) return false &#125; this.showModal(&#123; msg: '提交成功' &#125;)&#125; 参考文献 https://blog.csdn.net/weixin_41041379/article/details/82017301]]></content>
+      <categories>
+        <category>记录</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+        <tag>表单</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[小程序getLocation定位不准]]></title>
     <url>%2F2020%2F04%2F26%2F%E5%B0%8F%E7%A8%8B%E5%BA%8FgetLocation%E5%AE%9A%E4%BD%8D%E4%B8%8D%E5%87%86%2F</url>
     <content type="text"><![CDATA[小程序getLocation定位不准来自官方文档 注意 工具中定位模拟使用IP定位，可能会有一定误差。且工具目前仅支持 gcj02 坐标。 使用第三方服务进行逆地址解析时，请确认第三方服务默认的坐标系，正确进行坐标转换。 ​ 在开发工具里调试会发现地图里显示的是当地政府的地址，就是因为使用IP定位，而在手机端查看会有很大误差，暂时把type改成gcj02并用“真机调试”可以精确定位。]]></content>

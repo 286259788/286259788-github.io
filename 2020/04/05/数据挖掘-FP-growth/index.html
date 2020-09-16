@@ -98,20 +98,20 @@
 
 
 
-  <meta name="description" content="数据挖掘大作业1记录一、简介频繁模式和关联规则​        大量数据中的频繁模式、关联和相关关系的发现，在选中市场、决策分析和商务关联方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一块（或依次）购买的商品的集合，研究顾客的购买习惯，以发现一些隐藏的、有趣的规则。典型的如顾客购买啤酒的时候很有可能会购买尿布。关联规则挖掘首先找出频繁项集（项的集合，如A和B，满足最小支持度阀值，或任务">
+  <meta name="description" content="数据挖掘-FP-growth一、简介​        本项目是基于FP-growth算法的淘宝用户数据关联分析，使用mlxtend包中的FP-growth算法实现数据的频繁模式挖掘并分析 使用的数据集：阿里天池 User Behavior Data from Taobao for Recommendation https://tianchi.aliyun.com/dataset/dataDetai">
 <meta name="keywords" content="数据挖掘,FP-growth">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据挖掘大作业1记录">
-<meta property="og:url" content="http://yoursite.com/2019/09/08/数据挖掘大作业1记录/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/04/05/数据挖掘-FP-growth/index.html">
 <meta property="og:site_name" content="王秋霖的博客">
-<meta property="og:description" content="数据挖掘大作业1记录一、简介频繁模式和关联规则​        大量数据中的频繁模式、关联和相关关系的发现，在选中市场、决策分析和商务关联方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一块（或依次）购买的商品的集合，研究顾客的购买习惯，以发现一些隐藏的、有趣的规则。典型的如顾客购买啤酒的时候很有可能会购买尿布。关联规则挖掘首先找出频繁项集（项的集合，如A和B，满足最小支持度阀值，或任务">
+<meta property="og:description" content="数据挖掘-FP-growth一、简介​        本项目是基于FP-growth算法的淘宝用户数据关联分析，使用mlxtend包中的FP-growth算法实现数据的频繁模式挖掘并分析 使用的数据集：阿里天池 User Behavior Data from Taobao for Recommendation https://tianchi.aliyun.com/dataset/dataDetai">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://s1.ax1x.com/2020/04/03/GaWtoD.png">
 <meta property="og:image" content="https://s1.ax1x.com/2020/04/03/Ga4IOI.png">
-<meta property="og:updated_time" content="2020-09-08T14:17:49.464Z">
+<meta property="og:updated_time" content="2020-09-16T14:45:36.661Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据挖掘大作业1记录">
-<meta name="twitter:description" content="数据挖掘大作业1记录一、简介频繁模式和关联规则​        大量数据中的频繁模式、关联和相关关系的发现，在选中市场、决策分析和商务关联方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一块（或依次）购买的商品的集合，研究顾客的购买习惯，以发现一些隐藏的、有趣的规则。典型的如顾客购买啤酒的时候很有可能会购买尿布。关联规则挖掘首先找出频繁项集（项的集合，如A和B，满足最小支持度阀值，或任务">
+<meta name="twitter:description" content="数据挖掘-FP-growth一、简介​        本项目是基于FP-growth算法的淘宝用户数据关联分析，使用mlxtend包中的FP-growth算法实现数据的频繁模式挖掘并分析 使用的数据集：阿里天池 User Behavior Data from Taobao for Recommendation https://tianchi.aliyun.com/dataset/dataDetai">
 <meta name="twitter:image" content="https://s1.ax1x.com/2020/04/03/GaWtoD.png">
 
 
@@ -384,7 +384,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/08/数据挖掘大作业1记录/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/05/数据挖掘-FP-growth/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王秋霖">
@@ -427,7 +427,7 @@
                 
               
 
-              <time title="创建时间：2019-09-08 22:00:00" itemprop="dateCreated datePublished" datetime="2019-09-08T22:00:00+08:00">2019-09-08</time>
+              <time title="创建时间：2020-04-05 22:00:00" itemprop="dateCreated datePublished" datetime="2020-04-05T22:00:00+08:00">2020-04-05</time>
             
 
             
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-09-08 22:17:49" itemprop="dateModified" datetime="2020-09-08T22:17:49+08:00">2020-09-08</time>
+                <time title="修改时间：2020-09-16 22:45:36" itemprop="dateModified" datetime="2020-09-16T22:45:36+08:00">2020-09-16</time>
               
             
           </span>
@@ -503,8 +503,11 @@
       
 
       
-        <h1><span id="数据挖掘大作业1记录">数据挖掘大作业1记录</span></h1><h2><span id="一-简介">一、简介</span></h2><h3><span id="频繁模式和关联规则">频繁模式和关联规则</span></h3><p>​        大量数据中的频繁模式、关联和相关关系的发现，在选中市场、决策分析和商务关联方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一块（或依次）购买的商品的集合，研究顾客的购买习惯，以发现一些隐藏的、有趣的规则。典型的如顾客购买啤酒的时候很有可能会购买尿布。关联规则挖掘首先找出频繁项集（项的集合，如A和B，满足最小支持度阀值，或任务相关元组的百分比），然后，由它们产生形如A=&gt;B的强关联规则。这些规则也满足最小置信度阀值（预定义的、在满足A的条件下满足B的概率）。进一步分析关联，发现项集A和B之间具有统计相关的相关规则。</p>
-<p>对于频繁模式的挖掘，已有许多有效的、可伸缩的算法，由它们可以导出关联和相关规则，书上介绍了Apriori和FP-growth两种算法，在mlxtend包中都有，我决定使用FP-growth算法</p>
+        <h1><span id="数据挖掘-fp-growth">数据挖掘-FP-growth</span></h1><h2><span id="一-简介">一、简介</span></h2><p>​        本项目是基于FP-growth算法的淘宝用户数据关联分析，使用mlxtend包中的FP-growth算法实现数据的频繁模式挖掘并分析</p>
+<p>使用的数据集：阿里天池 User Behavior Data from Taobao for Recommendation</p>
+<p><a href="https://tianchi.aliyun.com/dataset/dataDetail?dataId=649" target="_blank" rel="noopener">https://tianchi.aliyun.com/dataset/dataDetail?dataId=649</a> </p>
+<h3><span id="频繁模式和关联规则">频繁模式和关联规则</span></h3><p>​        大量数据中的频繁模式、关联和相关关系的发现，在选中市场、决策分析和商务关联方面是有用的。一个流行的应用领域是购物篮分析，通过搜索经常一块（或依次）购买的商品的集合，研究顾客的购买习惯，以发现一些隐藏的、有趣的规则。典型的如顾客购买啤酒的时候很有可能会购买尿布。关联规则挖掘首先找出频繁项集（项的集合，如A和B，满足最小支持度阀值，或任务相关元组的百分比），然后，由它们产生形如A=&gt;B的强关联规则。这些规则也满足最小置信度阀值（预定义的、在满足A的条件下满足B的概率）。进一步分析关联，发现项集A和B之间具有统计相关的相关规则。</p>
+<p>​        对于频繁模式的挖掘，已有许多有效的、可伸缩的算法，由它们可以导出关联和相关规则，书上介绍了Apriori和FP-growth两种算法，在mlxtend包中都有，我决定使用FP-growth算法</p>
 <h3><span id="fp-growth算法">FP-growth算法</span></h3><p>​        <strong>FP-Growth(频繁模式增长算法</strong>是韩嘉炜等人在2000年提出的关联分析算法，它采取如下分治策略：将提供频繁项集的数据库压缩到一棵频繁模式树（FP-tree），但仍保留项集关联信息。在算法中使用了一种称为频繁模式树（Frequent Pattern Tree）的数据结构。FP-tree是一种特殊的前缀树，由频繁项头表和项前缀树构成。FP-Growth算法基于以上的结构加快整个挖掘过程。</p>
 <p>​        相比Apriori算法需要多次扫描数据库，FP-growth只需要对数据库扫描2次。第1次扫描获得当个项目的频率，去掉不满足支持度要求的项，并对剩下的项排序。第2次扫描建立一颗FP-Tree树。</p>
 <p>挖掘频繁模式前首先要构造FP-Tree，输入一个交易数据库DB和一个最小支持度threshold，输出:它的FP-tree.</p>
@@ -520,7 +523,7 @@
 <blockquote>
 <p>在使用vs2019安装python后要设置环境变量，在系统变量&gt;path中添加C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\Scripts，否则会提示pip等不是命令</p>
 </blockquote>
-<h2><span id="三-作业基本思路">三、作业基本思路</span></h2><ol>
+<h2><span id="三-基本思路">三、基本思路</span></h2><ol>
 <li>读懂mlxtend中的FP-growth算法部分，了解其原理和大致过程</li>
 <li>在jupyter notebook中建立python3文件</li>
 <li>通过Pandas读入数据，首先对数据进行观察：有无索引、标号、有没有数据缺失</li>
@@ -1077,8 +1080,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/20/关于博客的基础美化/" rel="next" title="关于博客的基础美化">
-                <i class="fa fa-chevron-left"></i> 关于博客的基础美化
+              <a href="/2019/12/31/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -1087,8 +1090,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/12/31/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2020/04/16/虚拟机不能复制粘贴/" rel="prev" title="虚拟机不能复制粘贴">
+                虚拟机不能复制粘贴 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1333,7 +1336,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-text">数据挖掘大作业1记录</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">一、简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">频繁模式和关联规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">FP-growth算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">二、软件环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">三、作业基本思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">四、算法分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">FP-growth简要步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">挖掘关联规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">五、实验步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">六、代码分析</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#null"><span class="nav-text">数据挖掘-FP-growth</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">一、简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">频繁模式和关联规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">FP-growth算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">二、软件环境准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">三、基本思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">四、算法分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">FP-growth简要步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#null"><span class="nav-text">挖掘关联规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">五、实验步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-text">六、代码分析</span></a></li></ol></li></ol></div>
             
 
           </div>
